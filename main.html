@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<script  src="main.js"></script>
+</head>
+<style>
+	body {
+		background-color: lightblue;
+	}	
+	h1 {
+ 		color: black;
+  		text-align: center;
+	}
+	#grad1 {
+		background-color: white; 
+  		background-image: linear-gradient(to bottom right, lightblue, white);
+	}
+
+</style>
+<body>
+	<h1>Testing Local Storage</h1><br>
+
+	<p>Add a new User and email and then add their email, in order to find if they are in local storage use the find users form below</p>
+	<form id="grad1">
+		Enter new user:<br>
+		<input type="text" name="username">
+		<br>Email:<br>
+		<input type="text" name="email"><br>
+		<button type="button"onclick="addUser()">Add</button>
+	</form>
+
+	<p id="test"></p>
+
+	<h2>Find User:</h2><br>
+	<form id="grad1">
+		Enter user:<br>
+		<input type="text" name="findUsr">
+		<br>Email:<br>
+		<input type="text" name="findEmail"><br>
+		<button type="button"onclick="findUser()">Add</button>
+	</form>
+	<p id="test01"></p>
+
+
+	<h2>Testing Local Storage With associative array </h2>
+	<button type="button"onclick="listArray()">Add</button>
+
+	<p id="test02"></p>
+
+	<h2>Testing Local Storage With array </h2>
+	<button type="button"onclick="localStorageArray()">List</button>
+
+	<p id="test03"></p>
+
+
+</body>
+</html>
